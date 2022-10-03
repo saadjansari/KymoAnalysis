@@ -1,0 +1,13 @@
+KYMOANALYSIS DATA
+
+General Information :
+
+Tiff path : E:\Google Drive\microtubule dynamics and cut7\21-15 screens and tests\cut7-989 TailD\pkl1D, klp2D (from crossing)\
+Spindle type : Bipolar
+Start frame : 1
+End frame : 210
+Start time (s) : 0.000
+End time (s) : 1876.000
+Time step (s) : 8.976
+Num poles : 2
+Num tracks : 0

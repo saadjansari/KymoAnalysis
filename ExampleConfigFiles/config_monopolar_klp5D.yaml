@@ -1,0 +1,26 @@
+useSecondPole: False # Use furthest pole for analysis of bipolar kymographs
+analyzeSpindleIntensity: False 
+analyzeByLength: False 
+analyzeGroups:
+    #- type: 'prophase'
+      #length: [0, 1.5] # Microns
+    - type: 'metaphase'
+      length: [1.5, 4]
+    - type: 'anaphase'
+      length: [4, 20]
+analyzeSPBAssociatedTracks: 0 # 0: analyze all, 1: analyze tracks that start below threshold, 2: analyze tracks that start above threshold
+SPBRegion: 1.00 
+
+# Figure 4 (klp5d monopolar)
+paperFigure: 4
+saveName: 'klp5d_monopolar'
+useBipolarKmeansLabel: False 
+strains:
+    - type: "pre-AB"
+      path : ['/Users/saadjansari/Documents/Projects/ImageAnalysis/KymoAnalysis/data/monopolar/paper_bidir/klp5d_preAB/*.txt']
+      time : 100000 
+      color: [68, 111, 200]
+    - type: "AB"
+      path : ['/Users/saadjansari/Documents/Projects/ImageAnalysis/KymoAnalysis/data/monopolar/paper_bidir/klp5d_postAB/*.txt']
+      time : 100000 
+      color: [220, 95, 60]

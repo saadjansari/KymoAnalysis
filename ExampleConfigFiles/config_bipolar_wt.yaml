@@ -1,0 +1,28 @@
+useSecondPole: False # Use furthest pole for analysis of bipolar kymographs
+analyzeSpindleIntensity: False 
+analyzeByLength: False 
+analyzeGroups:
+    #- type: 'prophase'
+      #length: [0, 1.5] # Microns
+    - type: 'metaphase'
+      length: [1.5, 4]
+    - type: 'anaphase'
+      length: [4, 20]
+analyzeSPBAssociatedTracks: 0 # 0: analyze all, 1: analyze tracks that start below threshold, 2: analyze tracks that start above threshold
+SPBRegion: 1.00 
+
+# Figure 2 (WT bipolar) (Set useBopolarKmeansLabel: True)
+paperFigure: 2
+saveName: 'wt_bipolar'
+useBipolarKmeansLabel: True
+strains:
+    - type: "pre-AB"
+      path : ['/Users/saadjansari/Documents/Projects/ImageAnalysis/KymoAnalysis/data/bipolar/wild type/*.txt']
+      time : 100000 
+      kmean_label: 0
+      color: [68, 111, 200]
+    - type: "AB"
+      path : ['/Users/saadjansari/Documents/Projects/ImageAnalysis/KymoAnalysis/data/bipolar/wild type/*.txt']
+      time : 100000 
+      kmean_label: 1
+      color: [220, 95, 60]
